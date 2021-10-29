@@ -2,7 +2,7 @@
 #define N 10 
 int main()
 {
-	int array[10]={10,11,8,7,6,5,4,3,2,1};
+	int array[10]={12,11,8,7,6,5,4,3,2,1};
 	int max=array[0];//定义最大值为第一个数 
 	int location=0,i;//把元素的初始位置定义为0 
 	for(i=1;i<N;i++)//??为什么这里i=1而下面的i=0？？ 
