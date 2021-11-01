@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main()
+{
+int a[10]={21,34,2,3,33,4,46,31,45,6}; 
+	int i,j,t;
+		for(i=0,j=9;i<j;)
+	{
+		if(a[i]%2==0)
+			i++;
+		else if(a[i]%2==1)
+		{
+			t=a[j];
+			a[j]=a[i];
+			a[i]=t;
+			j--;
+		}
+	}
+	for(i=0;i<10;i++)
+	printf("%d ",a[i]);
+	return 0;
+}

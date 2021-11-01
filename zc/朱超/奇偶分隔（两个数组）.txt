@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main()
+{
+	int arr[10]={5,45,26,38,96,59,4,896,367,89};
+	int str[10];
+	int i=0,j=0,k=9;
+	for(i=0;i<=9;i++)
+	{
+		if(arr[i]%2==0)
+		{
+			str[j]=arr[i];
+			j++;
+		}
+		if(arr[i]%2!=0)
+		{
+			str[k]=arr[i];
+			k--;
+		}
+	}
+	for(i=0;i<10;i++)
+	printf("%d ",str[i]);
+	return 0;
+ } 
