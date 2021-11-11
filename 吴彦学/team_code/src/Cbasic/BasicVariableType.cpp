@@ -1,8 +1,15 @@
 // C基本变量类型
 #include <stdio.h>
+#include <stdbool.h>
 
-int main(int argc, char **argv)
+typedef struct _A
 {
+    int a;
+}A;
+
+void printType()
+{
+    bool x = 0;
     char a = '0';
     unsigned char a1 = '0';
     short a2 = 123;
@@ -16,7 +23,7 @@ int main(int argc, char **argv)
     unsigned long long d1 = 7890LL;
     float e = 2.0f;
     double f = 2.0;
-
+    
     printf("char type: %d byte\n", sizeof(a));
     printf("unsigned char type: %d byte\n", sizeof(a1));
 
@@ -34,6 +41,27 @@ int main(int argc, char **argv)
 
     printf("float type: %d byte\n", sizeof(e));
     printf("double type: %d byte\n", sizeof(f));
+    printf("bool type: %d byte\n", sizeof(bool));
+}
 
+void test()
+{
+        // 类型转化
+    char a = -0;
+    int b = (int) a; // 
+    
+    int a1 = 12345;
+    char b1 = a1;
+    char b2 = (char) a1;
+    printf("%d\n",b2);
+
+    int a2 = 1 > 2 ? 1 : 2;
+}
+
+enum week {Mon, Tues, Thirs, Thur, Fri, Sat, Sun};
+
+int main(int argc, char **argv)
+{
+    int a = 0;
     return 0;
 }

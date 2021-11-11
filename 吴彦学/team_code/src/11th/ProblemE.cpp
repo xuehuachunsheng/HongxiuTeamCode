@@ -34,14 +34,16 @@ void initialize()
 
 bool all_neighbors(int aa[], int n) // 判断这些元素是否全部相邻
 {
-    for (int i = 0; i < n; ++i)
+    for (int i = 0; i < n; ++i) // 从这n个管子里面判断，是不是有一个管子跟其他管子都不相邻
     {
-        bool anyNeighbor = false;
+        bool anyNeighbor = false; // 假设他们都不相邻
+        int index1 = aa[i];
         for (int j = 0; j < n; ++j)
         {
             if (j == i) 
                 continue;
-            if (isNeighbor[aa[j]][aa[i]])
+            int index2 = aa[j];
+            if (isNeighbor[index1][index2])
             {
                 anyNeighbor = true;
                 break;
@@ -67,6 +69,7 @@ int main(int argc, char **argv)
                 if (all_neighbors(aa, 3))
                     ++sum;
             }
+
     for (int a1 = 0; a1 < 7; ++a1) // 亮4个
         for(int a2 = 0; a2 < a1; ++a2)
             for(int a3 = 0; a3 < a2; ++a3)

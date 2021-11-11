@@ -15,7 +15,7 @@ int main(int argc, char **argv)
 {
     // 解法1. 常规解析
     int n = 2020;
-    int sum=0;
+    int sum = 0;
     for (int i = 1; i <= 2020; ++i)
     {
         sum += (i % 10 == 2); // 解析出个位
@@ -25,12 +25,18 @@ int main(int argc, char **argv)
     }
     printf("%d\n", sum);
     ///////////////////
+
+
+
+
+
+    
     // 解法2. 转化为字符串 利用C++语法。
     sum = 0;
     for (int i = 1; i <= 2020; ++i)
     {
-        string num_str = "000" + to_string(i);
-        for (int j = num_str.length()-4; j < num_str.length(); ++j)
+        string num_str = to_string(i); // 字符串变量 实际上是一个字符的数组
+        for (int j = 0; j < num_str.length(); ++j) // "1022"
             if (num_str[j] == '2')
                 ++sum;
     }

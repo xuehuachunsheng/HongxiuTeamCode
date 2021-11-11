@@ -22,6 +22,5 @@ int main(int argc, char **argv)
     youxiu = youxiu / n * 100;
     printf("%d%c\n",(int)(jige+0.5), '%');
     printf("%d%c\n",(int)(youxiu+0.5), '%');
-
     return 0;
 }

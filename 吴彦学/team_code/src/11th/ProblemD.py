@@ -6,5 +6,8 @@ gap = datetime.timedelta(days=1) # 时间gap, 每次增加1天
 sum_km = 2 # 第一天是2公里
 while start < end:
     start += gap; # 每次加1天
-    sum_km += 2 if start.day == 1 or start.weekday() == 0 else 1
+    if start.day == 1 or start.weekday() == 0:
+        sum_km += 2
+    else: sum_km += 1
+    # sum_km += 2 if start.day == 1 or start.weekday() == 0 else 1
 print(sum_km)

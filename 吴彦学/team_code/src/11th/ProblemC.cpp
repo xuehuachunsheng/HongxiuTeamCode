@@ -15,8 +15,10 @@ int main(int argc, char **argv)
     int sum = 0;
     for (int i = 1; i <= 38; ++i)
         sum += i;
+    printf("%d\n",sum);
     sum += 39 / 2 + 1;
     printf("%d\n", sum);
+
 
     /**
      * 解法2：暴力破解
@@ -70,14 +72,17 @@ int main(int argc, char **argv)
     int r = 0; // 表示行
     int c = 0; // 表示列
     int num = 1; // 当前数字
-    flag = true;
+
+    flag = true; // 
     bool isFind = false; // 是否计算完毕
-    while (!isFind)
+
+
+    while (!isFind) // 第20行20列的数没有找到
     {
         if (flag) // 从上往下
         {
             c++; // 新起一斜列，因此列应该+1
-            while (c > 0)
+            while (c > 0) // 斜向左下方
             {
                 num++;
                 r++;
@@ -93,15 +98,15 @@ int main(int argc, char **argv)
                 if (r == 19 && c == 19)
                 {
                     printf("%d", num);
-                    isFind=true;
-                    break;
+                    return 0;
                 }
                 r--;
                 c++;
             }
         }
+
         num++;
-        flag = !flag;
+        flag = !flag; // true --> false, false --> true
     }
     return 0;
 }
