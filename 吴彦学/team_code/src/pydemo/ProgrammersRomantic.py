@@ -8,6 +8,7 @@ while True:
           lst_con = ''
           for x in range(-30, 30):
                formula = ((x*0.05)**2+(y*0.1)**2-1)**3-(x*0.05)**2*(y*0.1)**3
+               #formula = ((x)**2+(y)**2-1)**3-(x)**2*(y*0.1)**3
                if formula <= 0:
                    lst_con += char[(x) % len(char)]
                else:

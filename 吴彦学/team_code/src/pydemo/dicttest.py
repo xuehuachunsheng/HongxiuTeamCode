@@ -24,4 +24,5 @@ courseContent = {
         },
 }
 
+print(courseContent["2"]["content"]["2.1"])
 
