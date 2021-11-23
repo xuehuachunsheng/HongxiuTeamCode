@@ -1,13 +1,14 @@
 #include <stdio.h>
-#include <stdlib.h>
+
 int main(int argc, char **argv)
 {
+    int n;
     int *p=NULL;
-    printf("%p", p);
+    p = &n;
+    scanf("%d", p);
+    printf("n的值是：%d", n);
     return 0;
 }
-
-
 
 
 
