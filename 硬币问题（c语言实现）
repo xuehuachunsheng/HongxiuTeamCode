@@ -1,0 +1,141 @@
+//硬币问题 
+// 8 15
+// 1 2 8 7 2 4 11 15
+#include <stdio.h>
+#include <stdlib.h>
+#include <windows.h>
+#include <algorithm>
+
+typedef struct _Node
+{
+	int value=0;  
+	int count=0;
+	_Node *next=NULL;
+	_Node *pri=NULL;
+}Node;
+
+void initialize(Node *a, int length)
+{
+	for(int i = 0; i < length; ++i)
+	{
+		a[i].value=0;
+		a[i].count=0;
+		a[i].next=NULL;
+		a[i].pri=NULL;
+	}
+}
+
+// 一般来说，Hash表的长度是质数 
+// 找小于upperBound的最大质数，用于确定Hash表的长度 
+int findMaxPrime(int upperBound)
+{
+	if (upperBound <= 1)
+		return -1;
+	for(int i = upperBound; i >= 2; --i)
+	{
+		bool isPrime = true;
+		for (int j = 2; j * j < i; ++j)
+		{
+			if(i % j == 0)
+			{
+				isPrime = false;
+				break;
+			}
+		}
+		if (isPrime)
+			return i;
+	}
+	return -1;
+}
+
+// 将值value放入hash表 
+// 如果产生冲突，则增加一个结点 
+void putValue(Node *table, int length, int value)
+{
+	unsigned int hashValue = value % length; // 也可以自己定义Hash函数 
+	Node *n = table + hashValue;
+	bool valueIn = false;
+	while(n->next != NULL)  
+	{
+		if (value == n->value)
+		{
+			++(n->count);
+			valueIn=true;
+			return;
+		}
+		else
+			n = n->next;
+	} 
+	n->value = value;
+	n->count= 1;
+	n->next = (Node *)malloc(sizeof(Node));
+	initialize(n->next, 1);
+	n->next->pri = n;
+}
+
+// 判断值value是否在table里面，如果在，那么返回值为value的数量，否则返回0 
+int isInHashTable(int value, Node *table, int length)
+{
+	unsigned int hashValue = value % length;
+	Node *n = table + hashValue;
+	while(n->next != NULL)
+	{
+		if (value == n->value)
+			return n->count;
+		n=n->next;
+	}
+	return 0;
+}
+// 释放hash表的内存空间 
+void myFree(Node *hashTable, int length)
+{
+	for(int i = 0; i < length; ++i)
+	{
+		Node *n = hashTable+i;
+		while (n->next != NULL)
+			n=n->next;
+		while(n != hashTable + i)
+		{
+			n=n->pri;
+			Node *t_n = n->next;	
+			t_n->pri=NULL;
+			t_n->next=NULL;
+			free(t_n);
+		}
+	}
+	free(hashTable);
+}
+int main(int argc, char **argv)
+{
+	int N, M;
+	scanf("%d %d", &N, &M);
+	int *account = (int *)malloc(N * sizeof(int));
+	for(int i = 0; i < N; ++i)
+		scanf("%d", account + i);
+	std::sort(account, account+N); // 排序 
+	
+	int maxPrime = findMaxPrime(10000);
+	Node *hashTable = (Node *) malloc(maxPrime * sizeof(Node));
+	initialize(hashTable, maxPrime);
+	for (int i = 0; i < N; ++i)
+		putValue(hashTable, maxPrime, account[i]);
+	
+	bool isFound=false;
+	for(int i = 0; i < N; ++i) // 查找硬币Match 
+	{
+		int res = M - account[i];
+		int count = isInHashTable(res, hashTable, maxPrime);
+		if ((res != account[i] && count >= 1) || (res == account[i] && count >= 2))
+		{
+			printf("%d %d", account[i], res);
+			isFound=true;
+			break; 
+		}
+	}
+	if (!isFound)
+		printf("No Solutions!");
+	myFree(hashTable, maxPrime);
+	free(account);
+	system("pause");
+	return 0;
+}
