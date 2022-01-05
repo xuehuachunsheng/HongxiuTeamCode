@@ -17,10 +17,10 @@ int main()
     for(int i = 0; i < 50; i++)
         for(int j = 0; j < 50; j++)
             p[i][j] = 5;
-    
+
     for(int i = 0; i < 50; i++)
         free(p[i]); // 释放内存
-
+    
     free(p);
     return 0;
 }

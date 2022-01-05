@@ -2,5 +2,6 @@
 
 int main()
 {
-    void a;
+    char a = 'a';
+    printf("%c", a);
 }
