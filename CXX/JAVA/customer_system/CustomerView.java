@@ -45,8 +45,9 @@ public class CustomerView {
                 case '5':
                     System.out.print("确认是否退出(Y/N)：");
                     char yn = CMUtility.readConfirmSelection();
-                    if (yn == 'Y')
+                    if (yn == 'Y') {
                         loopFlag = false;
+                    }
                     break;
             }
         } while (loopFlag);

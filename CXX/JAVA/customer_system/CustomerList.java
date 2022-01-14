@@ -1,6 +1,5 @@
 package customer_system;
 
-import java.util.Scanner;
 
 public class CustomerList {
     private Customer[] customers;
@@ -78,8 +77,7 @@ public class CustomerList {
         if(index > total || index < 0){
             System.out.println("未找到指定的客户！");
         }
-        Customer customer = customers[index];
-        return customer;
+        return customers[index];
     }
 
     /**
