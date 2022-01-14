@@ -19,10 +19,12 @@ public class 快速排序 {
             int low = start;
             int high = end + 1;
             while (true) {
-                while (low < end && data[++low] - base <= 0)
+                while (low < end && data[++low] - base <= 0) {
                     ;
-                while (high > start && data[--high] - base >= 0)
+                }
+                while (high > start && data[--high] - base >= 0) {
                     ;
+                }
                 if (low < high) {
                     swap(data, low, high);
                 }
