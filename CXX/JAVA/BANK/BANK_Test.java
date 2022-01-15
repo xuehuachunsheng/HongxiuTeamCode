@@ -1,11 +1,15 @@
 package BANK;
 
+import java.awt.*;
+
 public class BANK_Test {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Bank bank = new Bank();
-        bank.addCustomer("Jane","Smith");
-        bank.getCustomer(0).setAccount(new Account(2000));
-        bank.getCustomer(0).getAccount().withdraw(200);
-        System.out.println("客户" + bank.getCustomer(0).getFirstName() + "的账户余额为：" + bank.getCustomer(0).getAccount().getBalance());
+        System.out.println(bank.getNumberOfCustomer());
+        bank.addCustomer("Jane", "Smith", 100);
+        bank.addCustomer("Jane", "Smith", 2020);
+        System.out.println(bank.getNumberOfCustomer());
+        Customer cust = bank.getCustomer();
+        System.out.println(cust.getFirstName() + " " + cust.getAccount().getBalance());
     }
 }

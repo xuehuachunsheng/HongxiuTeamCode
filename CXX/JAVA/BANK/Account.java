@@ -2,29 +2,31 @@ package BANK;
 
 public class Account {
     private double balance;
-    public Account(double init_balance){
+
+    public Account(double init_balance) {
         balance = init_balance;
     }
-    public double getBalance(){
+
+    public double getBalance() {
         return balance;
     }
+
     //存钱操作
-    public void deposit(double amt){
-        if(amt > 0){
+    public void deposit(double amt) {
+        if (amt > 0) {
             balance += amt;
             System.out.println("存钱成功。");
-        }
-        else{
+        } else {
             System.out.println("存入失败。");
         }
     }
+
     //取钱操作
-    public void withdraw(double amt){
-        if(amt <= balance){
+    public void withdraw(double amt) {
+        if (amt <= balance) {
             balance -= amt;
             System.out.println("取钱成功。");
-        }
-        else{
+        } else {
             System.out.println("余额不足。");
         }
     }
