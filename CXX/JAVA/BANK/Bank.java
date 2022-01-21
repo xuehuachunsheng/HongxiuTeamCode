@@ -42,6 +42,7 @@ public class Bank {
                 return customers[index];
             }
             System.out.println("请重新输入。。。");
+            index = scan.nextInt();
         }
         return null;
     }
