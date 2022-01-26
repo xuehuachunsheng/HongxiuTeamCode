@@ -63,8 +63,12 @@ public class TSUtility {
         while (scanner.hasNextLine()) {
             line = scanner.nextLine();
             if (line.length() == 0) {
-                if (blankReturn) return line;
-                else continue;
+                if (blankReturn) {
+                    return line;
+                }
+                else {
+                    continue;
+                }
             }
 
             if (line.length() < 1 || line.length() > limit) {

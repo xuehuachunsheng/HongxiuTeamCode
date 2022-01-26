@@ -2,7 +2,7 @@ package customer_system;
 
 
 public class CustomerView {
-    private CustomerList customerList = new CustomerList(10);
+    private CustomerList customerList = new CustomerList(100);
 
     public static void main(String[] args){
 
@@ -11,7 +11,7 @@ public class CustomerView {
     }
 
     public CustomerView(){
-        Customer customer = new Customer("张三", '男', 30, "010-56253825",
+        Customer customer = new Customer("张三", '男', 30, "0100-56253825",
                 "abc@email.com");
         customerList.addCustomer(customer);
     }

@@ -34,7 +34,7 @@ public class 数组练习 {
 //        System.out.println("最高分是：" + max_score);
 //        for(i = 0;i < n;i++){
 //            System.out.print("Student " + i+1 + " score is " + score[i] + ", grade is ");
-//            switch ((max_score - score[i]) / 10){
+//            switch ((max_score - score[i]) / 100){
 //                case 0:System.out.println("A");break;
 //                case 1: System.out.println("B");break;
 //                case 2: System.out.println("C");break;

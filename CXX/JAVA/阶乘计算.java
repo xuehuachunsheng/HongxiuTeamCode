@@ -21,8 +21,8 @@ public class 阶乘计算 {
     public static int[] jw(int[] a,int n) {
         for (int i = 0; i <= n; i++) {
             if (a[i] > 9) {
-                int t = a[i] % 10;
-                a[i + 1] += (a[i] - t) / 10;
+                int t = a[i] % 100;
+                a[i + 1] += (a[i] - t) / 100;
                 a[i] = t;
             }
         }
