@@ -1,0 +1,8 @@
+C:\Users\24521\Desktop\c#日常\3.3homework\3.3homework\obj\Debug\3.3homework.csproj.AssemblyReference.cache
+C:\Users\24521\Desktop\c#日常\3.3homework\3.3homework\obj\Debug\3.3homework.csproj.SuggestedBindingRedirects.cache
+C:\Users\24521\Desktop\c#日常\3.3homework\3.3homework\obj\Debug\3.3homework.csproj.CoreCompileInputs.cache
+C:\Users\24521\Desktop\c#日常\3.3homework\3.3homework\bin\Debug\3.3homework.exe.config
+C:\Users\24521\Desktop\c#日常\3.3homework\3.3homework\bin\Debug\3.3homework.exe
+C:\Users\24521\Desktop\c#日常\3.3homework\3.3homework\bin\Debug\3.3homework.pdb
+C:\Users\24521\Desktop\c#日常\3.3homework\3.3homework\obj\Debug\3.3homework.exe
+C:\Users\24521\Desktop\c#日常\3.3homework\3.3homework\obj\Debug\3.3homework.pdb

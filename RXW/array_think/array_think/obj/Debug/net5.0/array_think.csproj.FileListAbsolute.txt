@@ -1,0 +1,16 @@
+C:\Users\24521\Desktop\c#日常\array_think\array_think\obj\Debug\net5.0\array_think.csproj.AssemblyReference.cache
+C:\Users\24521\Desktop\c#日常\array_think\array_think\obj\Debug\net5.0\array_think.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\24521\Desktop\c#日常\array_think\array_think\obj\Debug\net5.0\array_think.AssemblyInfoInputs.cache
+C:\Users\24521\Desktop\c#日常\array_think\array_think\obj\Debug\net5.0\array_think.AssemblyInfo.cs
+C:\Users\24521\Desktop\c#日常\array_think\array_think\obj\Debug\net5.0\array_think.csproj.CoreCompileInputs.cache
+C:\Users\24521\Desktop\c#日常\array_think\array_think\bin\Debug\net5.0\array_think.exe
+C:\Users\24521\Desktop\c#日常\array_think\array_think\bin\Debug\net5.0\array_think.deps.json
+C:\Users\24521\Desktop\c#日常\array_think\array_think\bin\Debug\net5.0\array_think.runtimeconfig.json
+C:\Users\24521\Desktop\c#日常\array_think\array_think\bin\Debug\net5.0\array_think.runtimeconfig.dev.json
+C:\Users\24521\Desktop\c#日常\array_think\array_think\bin\Debug\net5.0\array_think.dll
+C:\Users\24521\Desktop\c#日常\array_think\array_think\bin\Debug\net5.0\array_think.pdb
+C:\Users\24521\Desktop\c#日常\array_think\array_think\obj\Debug\net5.0\array_think.dll
+C:\Users\24521\Desktop\c#日常\array_think\array_think\obj\Debug\net5.0\refint\array_think.dll
+C:\Users\24521\Desktop\c#日常\array_think\array_think\obj\Debug\net5.0\array_think.pdb
+C:\Users\24521\Desktop\c#日常\array_think\array_think\obj\Debug\net5.0\array_think.genruntimeconfig.cache
+C:\Users\24521\Desktop\c#日常\array_think\array_think\obj\Debug\net5.0\ref\array_think.dll

@@ -1,0 +1,16 @@
+C:\Users\24521\Desktop\c#日常\animal\animal\bin\Debug\net5.0\animal.exe
+C:\Users\24521\Desktop\c#日常\animal\animal\bin\Debug\net5.0\animal.deps.json
+C:\Users\24521\Desktop\c#日常\animal\animal\bin\Debug\net5.0\animal.runtimeconfig.json
+C:\Users\24521\Desktop\c#日常\animal\animal\bin\Debug\net5.0\animal.runtimeconfig.dev.json
+C:\Users\24521\Desktop\c#日常\animal\animal\bin\Debug\net5.0\animal.dll
+C:\Users\24521\Desktop\c#日常\animal\animal\bin\Debug\net5.0\animal.pdb
+C:\Users\24521\Desktop\c#日常\animal\animal\obj\Debug\net5.0\animal.csproj.AssemblyReference.cache
+C:\Users\24521\Desktop\c#日常\animal\animal\obj\Debug\net5.0\animal.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\24521\Desktop\c#日常\animal\animal\obj\Debug\net5.0\animal.AssemblyInfoInputs.cache
+C:\Users\24521\Desktop\c#日常\animal\animal\obj\Debug\net5.0\animal.AssemblyInfo.cs
+C:\Users\24521\Desktop\c#日常\animal\animal\obj\Debug\net5.0\animal.csproj.CoreCompileInputs.cache
+C:\Users\24521\Desktop\c#日常\animal\animal\obj\Debug\net5.0\animal.dll
+C:\Users\24521\Desktop\c#日常\animal\animal\obj\Debug\net5.0\refint\animal.dll
+C:\Users\24521\Desktop\c#日常\animal\animal\obj\Debug\net5.0\animal.pdb
+C:\Users\24521\Desktop\c#日常\animal\animal\obj\Debug\net5.0\animal.genruntimeconfig.cache
+C:\Users\24521\Desktop\c#日常\animal\animal\obj\Debug\net5.0\ref\animal.dll
