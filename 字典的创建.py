@@ -1,0 +1,9 @@
+#直接使用{}创建
+dict1={'name':'zhuchao','age':20}
+print(dict1)
+#用dict()创建
+dict2=dict(name='zhuchao',age=20)
+print(dict2)
+#创建空字典
+dict3={}
+print(dict3)
