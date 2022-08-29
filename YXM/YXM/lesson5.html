@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		// var a = 100;
+
+		// document.write(a);
+
+		// var arr = [1,3];
+		// var arr1 = arr;
+		// arr.push(2);
+		// document.write(arr1);
+		// document.write("<br>");
+
+
+
+		//交换c,d
+		// var c = 123;
+		// var d = 234;
+		// c = c + d;
+		// d = c - d;
+		// c = c - d;
+		// document.write(c,"<br>",d);
+		// document.write("<br>");
+
+
+		//计算2的n次幂
+		// var n = parseInt(window.prompt('输入n'));
+		// var m = 1;
+		// for(;n>0;n--){
+		// 	m = m * 2
+		// }
+		// document.write(m);
+
+
+
+		//计算n的阶乘
+		// var n = parseInt(window.prompt('输入n'));
+		// var num = 1;
+		// for(;n>0;n--){
+		// 	num = num * n;
+		// }
+		// document.write(num);
+
+
+
+
+		//反向输出
+		// var m = parseInt(window.prompt('输入一个三位数'));
+		// a = m % 10;//个位
+		// b = (m - a) % 100 / 10;//十位
+		// c = (m - a - b * 10) / 100; //百位
+
+		// document.write(a*100+b*10+c);
+
+
+
+		//斐波那契数列
+		var n = parseInt(window.prompt('input'));
+		var first = 1,
+			second = 1,
+			third;
+		if(n > 2){
+			for(i=2;i<n;i++){
+			third = first + second;
+			first = second;
+			second = third;
+			}
+			document.write(third);
+		}
+		else{
+			document.write(1);
+		}
+		
+	</script>
+
+</body>
+</html>
