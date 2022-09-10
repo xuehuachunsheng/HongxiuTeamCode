@@ -1,0 +1,9 @@
+x=linspace(0,2*pi,100);
+y1=sin(x);
+y2=x/2;
+y3=cos(x);
+plot(x,y1,'-r',x,y2,'+b',x,y3,'*g')
+title('图例标准函数')
+xlabel('xvalue'),ylabel('yvalue')
+axis([0,7,-2,3])%设置坐标轴的范围
+legend('sin(x)','x/2','cos(x)')%添加图例

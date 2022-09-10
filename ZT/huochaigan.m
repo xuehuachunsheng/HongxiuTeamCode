@@ -1,0 +1,13 @@
+t=-2*pi:pi/20:2*pi;
+x=exp(cos(t));
+y=exp(sin(t));
+z=exp(-t);
+stem3(x,y,z,'fill','r')
+title('三维火柴杆图')
+figure(2)
+subplot(2,2,1)
+stem(x)
+subplot(2,2,2)
+stem(y)
+subplot(2,2,3)
+stem(z)
