@@ -26,11 +26,6 @@ int main(int argc, char **argv)
     printf("%d\n", sum);
     ///////////////////
 
-
-
-
-
-    
     // 解法2. 转化为字符串 利用C++语法。
     sum = 0;
     for (int i = 1; i <= 2020; ++i)
