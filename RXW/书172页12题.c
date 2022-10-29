@@ -2,7 +2,7 @@
 int main()
 {
 //	int a[10],i;
-//	printf("输入10个整数：");
+//	printf("脢盲脠毛10赂枚脮没脢媒拢潞");
 //	for(i=0;i<10;i++)
 //	scanf("%d",&a[i]);
 //	for(i=1;i<=10;i++)
@@ -21,5 +21,6 @@ int main()
 		}
 	}
 	printf("%d\n",k);
+	return 0;
 }
 
